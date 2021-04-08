@@ -1,4 +1,4 @@
-"""Vivieros URL Configuration
+"""Viveros URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Vivieros.views.views import hola, home, SINGUP, LOGIN, ABOUTUS
-from Vivieros.views.register import Register
+from Viveros.views.views import hola, home, SINGUP, LOGIN, ABOUTUS
+from Viveros.views.register import Register
 
 urlpatterns = [
     path('admin/', admin.site.urls),
