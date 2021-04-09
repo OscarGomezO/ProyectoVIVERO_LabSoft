@@ -15,13 +15,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Vivieros.views import hola, home, SINGUP, LOGIN, ABOUTUS
+from Vivieros import views as local_views
+from apps.boards import views
+#from Vivieros.views import hola, home, SINGUP, LOGIN, ABOUTUS
+from Vivieros.views import  home, index
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', hola),
     path('home/', home),
+    '''path('hello/', hola),
     path('SINGUP/', SINGUP),
     path('LOGIN/', LOGIN),
     path('ABOUTUS/', ABOUTUS),
+    #path('hi/<str:name>/<int:arg>/', local_views.say_hi),
+    path('posts/', views.list_posts),
+    ''',
+    path('', index, name='index'),
+    path('', TemplateView.as_view(template='base.html')),
+
 ]
