@@ -90,7 +90,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'baseviveros',
         'USER': 'postgres',
-        'PASSWORD': '1197',
+        'PASSWORD': '6608',
         'HOST': 'localhost',
         'DATABASE_PORT': '',
     }
