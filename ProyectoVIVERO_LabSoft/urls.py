@@ -17,12 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from Modulovivero import views
+from Modulologin import views as loginviews
 from ProyectoVIVERO_LabSoft.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'), #Acá viene la URL de inicio o Home
     path('viveros/', views.viveroview, name='vivero'), #Plantilla base
+    path('login/', loginviews.loginview, name='login'),
 
 ]
 
