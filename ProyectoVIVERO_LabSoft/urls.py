@@ -23,7 +23,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'), #Acá viene la URL de inicio o Home
     path('viveros/', views.viveroview, name='vivero'), #Plantilla base
-
+    path('usuario/', views.usuarioview, name='usuario'),
+    path('productocontrol/', views.productocontrolview, name='productoscontrol'),
+    path('labores', views.laborview, name='labores'),
+    path('contacto/', views.contactoview, name='contacto'),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

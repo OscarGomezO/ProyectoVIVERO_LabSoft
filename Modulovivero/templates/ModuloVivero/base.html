@@ -27,6 +27,8 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <!-- <nav class="navbar navbar-expand-lg navbar-fixed-top transparent" id="nav1"> -->
+  <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
     <div class="container">
       <a class="navbar-brand" href="{% url 'home' %}">Home</a>  <!-- Invoco al nombre del archivo URL del proyecto principal-->
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,13 +43,16 @@
 
             <!-- De aquí hacia abajo van los otros templates -->
           <li class="nav-item">
-            <a class="nav-link" href="about.html">Registro de Usuarios</a>
+            <a class="nav-link" href="{% url 'usuario' %}">Registro de Usuarios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="post.html"></a>
+            <a class="nav-link" href="{% url 'productoscontrol' %}"> Registro de Productos de Control</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="{% url 'labores' %}">Registro de Labores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="static/contact.html">SOBRE NOSOTROS</a>
           </li>
         </ul>
       </div>
